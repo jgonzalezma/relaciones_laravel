@@ -18,7 +18,7 @@
     	<td>{{$proyecto->id}}</td>
 		<td>{{$proyecto->nombre}}</td>
 		<td>{{$proyecto->titulo}}</td>
-		<td></td>
+		<td>{{$proyecto->empleado->nombre}}</td>
     </tr> 
     @endforeach 	
     	<!-- <th>{{$proyecto->responsable}}</th> !-->

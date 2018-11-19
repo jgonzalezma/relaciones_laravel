@@ -6,13 +6,16 @@ use Illuminate\Database\Eloquent\Model;
 
 class Empleado extends Model
 {	
-	public function proyecto()
+	public function proyectos()
 	{
-    	return $this->hasMany(Proyecto::class);
+    	return $this->belongsToMany('App\Proyecto');
 	}
 
 	public function departamento()
 	{
-    	return $this->belongsTo(Departamento::class);
+    	return $this->belongsTo('App\Departamento');
+	}
+	public function proyecto(){
+		return $this->hasOne('App\Proyecto');
 	}
 }

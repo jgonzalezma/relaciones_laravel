@@ -15,6 +15,7 @@ class EmpleadoController extends Controller
 
   public function get ($id)
   {
-      return view ('empleados.empleado');
+  		$empleado = Empleado::find($id);
+      return view ('empleados.empleado', ['empleado' => $empleado]);
   }
 }

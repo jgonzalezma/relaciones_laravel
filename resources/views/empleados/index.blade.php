@@ -16,8 +16,8 @@
     <tr>
       <td>{{$empleado->id}}</td>
     <td>{{$empleado->nombre}} {{$empleado->apellido1}}</td>
-    <td></td>
-    <td></td>
+    <td>{{$empleado->departamento->nombre}}</td>
+    <td>{{is_null($empleado->proyecto)?"":($empleado->proyecto->titulo)}}</td>
     </tr>
     @endforeach
   </table>

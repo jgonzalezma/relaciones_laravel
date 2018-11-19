@@ -15,6 +15,7 @@ class DepartamentoController extends Controller
 
   public function get ($id)
   {
-      return view ('departamentos.departamento');
+  		$departamento = Departamento::find($id);
+      return view ('departamentos.departamento', ['departamento' => $departamento]);
   }
 }

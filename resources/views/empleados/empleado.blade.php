@@ -4,8 +4,8 @@
 
 @section('content')
 
-  <h2>Empleado:</h2>
-  <h3>Responsable del proyecto:</h3>
-  <h3>Colabora en los siguientes proyectos:</h3>
+  <h2>Empleado: {{$empleado->nombre}}</h2>
+  <h3>Responsable del proyecto: {{$empleado->proyecto->titulo}}</h3>
+  <h3>Colabora en los siguientes proyectos: {{$empleado->proyectos}}</h3>
 
 @endsection
