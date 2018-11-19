@@ -6,6 +6,6 @@
 
   <h2>Departamento: {{$departamento->nombre}}</h2>
   <h3>Codigo: {{$departamento->codigo}}</h3>
-  <h3>Empleados:</h3>
+  <h3>Empleados: {{$departamento->empleado}}</h3>
 
 @endsection

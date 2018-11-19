@@ -15,7 +15,7 @@
     </tr>
     @foreach($departamentos as $departamento)
     <tr>
-    	<td>{{$departamento->id}}</td>
+    	<td><a href="/departamento/{{ $departamento->id }}"> {{ $departamento->id }}</a></td>
 		<td>{{$departamento->codigo}}</td>
 		<td>{{$departamento->nombre}}</td>
     </tr>

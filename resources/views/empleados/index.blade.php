@@ -14,7 +14,7 @@
     </tr>
     @foreach($empleados as $empleado)
     <tr>
-      <td>{{$empleado->id}}</td>
+      <td><a href="/empleado/{{ $empleado->id }}" >{{$empleado->id}}</a></td>
     <td>{{$empleado->nombre}} {{$empleado->apellido1}}</td>
     <td>{{$empleado->departamento->nombre}}</td>
     <td>{{is_null($empleado->proyecto)?"":($empleado->proyecto->titulo)}}</td>

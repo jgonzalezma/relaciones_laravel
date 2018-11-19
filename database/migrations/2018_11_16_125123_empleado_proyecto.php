@@ -15,7 +15,7 @@ class EmpleadoProyecto extends Migration
     {
         Schema::create('empleado_proyecto', function (Blueprint $table) {
             $table->integer('empleado_id');
-            $table->integer('departamento_id');
+            $table->integer('proyecto_id');
             $table->date('fechainicio');
             $table->date('fechafin');   
             $table->timestamps();
