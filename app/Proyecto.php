@@ -10,6 +10,6 @@ class Proyecto extends Model
     	return $this->belongsTo('App\Empleado');
     }
     public function empleados(){
-    	return $this->belongsToMany('App\Empleado');
+    	return $this->belongsToMany('App\Empleado')->withPivot('fechainicio', 'fechafin');
     }
 }

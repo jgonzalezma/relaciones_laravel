@@ -9,4 +9,5 @@
   <h3>Responsable: {{$proyecto->empleado->nombre}}</h3>
   <h3>Colaboradores:</h3>
 
+
 @endsection

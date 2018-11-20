@@ -19,3 +19,7 @@ Route::get('/empleados', ['as'=>'empleados','uses'=>'EmpleadoController@index'])
 Route::get('/empleado/{id}', ['as'=>'empleado','uses'=>'EmpleadoController@get']);
 Route::get('/departamentos', ['as'=>'departamentos','uses'=>'DepartamentoController@index']);
 Route::get('/departamento/{id}', ['as'=>'departamento','uses'=>'DepartamentoController@get']);
+Route::get('/form', function() {
+	return view('/formulario/formulario');
+});
+Route::get('/insertar', 'EloquentController@insert');
