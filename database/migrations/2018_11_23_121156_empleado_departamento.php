@@ -4,7 +4,7 @@ use Illuminate\Support\Facades\Schema;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Database\Migrations\Migration;
 
-class EmpleadoProyecto extends Migration
+class EmpleadoDepartamento extends Migration
 {
     /**
      * Run the migrations.
@@ -13,9 +13,9 @@ class EmpleadoProyecto extends Migration
      */
     public function up()
     {
-        Schema::create('empleado_proyecto', function (Blueprint $table) {
+        Schema::create('empleado_departamento', function (Blueprint $table) {
             $table->integer('empleado_id');
-            $table->integer('proyecto_id');
+            $table->integer('departamento_id');
             $table->date('fechainicio');
             $table->date('fechafin');   
             $table->timestamps();
@@ -29,6 +29,6 @@ class EmpleadoProyecto extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('empleado_proyecto');
+        Schema::dropIfExists('empleado_departamento');
     }
 }
